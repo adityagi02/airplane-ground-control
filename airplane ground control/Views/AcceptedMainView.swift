@@ -12,17 +12,13 @@ struct AcceptedMainView: View {
    
     init() {
         FetchAPI()
-        
-        
-        
     }
     
     
     var body: some View {
-        
-        
-        NavigationView {
-            
+
+    NavigationView  {
+            ScrollView {
             VStack(spacing: -13) {
                     HStack(spacing: -100){
                         
@@ -220,8 +216,8 @@ struct AcceptedMainView: View {
                             }, label: {
                                 VStack{
                                     VStack(spacing: 4.5){
-                                        Text("Baggage").font(.system(size: 29)).foregroundColor(.brown)
-                                        Text("🧳").font(.system(size: 37)).shadow(radius: 3)
+                                        Text("Inventary").font(.system(size: 29)).foregroundColor(.black).shadow(radius: 3)
+                                        Text("⚙️").font(.system(size: 37)).shadow(radius: 3)
                                     }
                                 }
                             }).tint(.white)
@@ -255,6 +251,7 @@ struct AcceptedMainView: View {
             .navigationBarTitle("SmartPort✈️").font(.system(size: 45))
             .navigationBarTitleDisplayMode(.inline)
             }
+          }
         }
     }
     
