@@ -79,7 +79,7 @@ struct AcceptedMainView: View {
                                 .shadow(radius: 12)
                         })
                         
-                        NavigationLink(destination: DatePlannerApp(), label: {
+                        NavigationLink(destination: DatePlanner(), label: {
                             Button(action: {
                                 buttonAction()
                             }, label: {
