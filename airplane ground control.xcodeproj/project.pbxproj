@@ -7,43 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC01408C29B7A92400C16062 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01408B29B7A92400C16062 /* LogInView.swift */; };
+		AC01408C29B7A92400C16062 /* loogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01408B29B7A92400C16062 /* loogInView.swift */; };
+		AC06216329D17C50002EFA8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC06216229D17C50002EFA8D /* ContentView.swift */; };
+		AC2D90A329D083230043FDA0 /* flightScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2D90A229D083230043FDA0 /* flightScheduleView.swift */; };
 		AC33290929C48CB10077F77A /* makeSOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33290829C48CB10077F77A /* makeSOSView.swift */; };
+		AC3EEC9A29D051720084D97E /* crewChatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EEC9929D051720084D97E /* crewChatBox.swift */; };
+		AC3EECA929D06CA70084D97E /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EEC9C29D06CA60084D97E /* TaskRow.swift */; };
+		AC3EECAA29D06CA70084D97E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EEC9D29D06CA60084D97E /* Event.swift */; };
+		AC3EECAB29D06CA70084D97E /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EEC9E29D06CA60084D97E /* EventList.swift */; };
+		AC3EECAC29D06CA70084D97E /* SFSymbolStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EEC9F29D06CA60084D97E /* SFSymbolStyling.swift */; };
+		AC3EECAE29D06CA70084D97E /* EventSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EECA129D06CA70084D97E /* EventSymbols.swift */; };
+		AC3EECAF29D06CA70084D97E /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EECA229D06CA70084D97E /* EventDetail.swift */; };
+		AC3EECB029D06CA70084D97E /* ColorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EECA329D06CA70084D97E /* ColorOption.swift */; };
+		AC3EECB129D06CA70084D97E /* EventEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EECA429D06CA70084D97E /* EventEditor.swift */; };
+		AC3EECB229D06CA70084D97E /* EventTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EECA529D06CA70084D97E /* EventTask.swift */; };
+		AC3EECB329D06CA70084D97E /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EECA629D06CA70084D97E /* EventData.swift */; };
+		AC3EECB429D06CA70084D97E /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EECA729D06CA70084D97E /* EventRow.swift */; };
+		AC3EECB529D06CA70084D97E /* SymbolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EECA829D06CA70084D97E /* SymbolPicker.swift */; };
+		AC3EECB729D06D920084D97E /* DatePlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EECB629D06D920084D97E /* DatePlannerApp.swift */; };
 		AC40343029BCA52500A67C46 /* nonAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40342F29BCA52500A67C46 /* nonAuthView.swift */; };
-		ACFD668629C43362005EA471 /* weatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD668529C43361005EA471 /* weatherView.swift */; };
-		FE64044329C592C300D53717 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE64044229C592C300D53717 /* APIServices.swift */; };
-		FE64044C29C6DE7800D53717 /* InformationElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE64044B29C6DE7800D53717 /* InformationElement.swift */; };
+		AC531F7029D2061E00A7C10E /* SimpleTable in Frameworks */ = {isa = PBXBuildFile; productRef = AC531F6F29D2061E00A7C10E /* SimpleTable */; };
+		AC5410A429D34651005D7DA8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5410A229D34651005D7DA8 /* LoginView.swift */; };
+		AC5410A829D34DE8005D7DA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC5410A729D34DE8005D7DA8 /* GoogleService-Info.plist */; };
+		AC5F652629D30BAB00723B28 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F652529D30BAB00723B28 /* FirebaseAnalytics */; };
+		AC5F652829D30BAB00723B28 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F652729D30BAB00723B28 /* FirebaseAppCheck */; };
+		AC5F652A29D30BAB00723B28 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F652929D30BAB00723B28 /* FirebaseAuth */; };
+		AC5F652C29D30BAB00723B28 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F652B29D30BAB00723B28 /* FirebaseAuthCombine-Community */; };
+		AC5F652E29D30BAB00723B28 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F652D29D30BAB00723B28 /* FirebaseDatabase */; };
+		AC5F653029D30BAB00723B28 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F652F29D30BAB00723B28 /* FirebaseDatabaseSwift */; };
+		AC5F653229D30BAB00723B28 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F653129D30BAB00723B28 /* FirebaseInAppMessaging-Beta */; };
+		AC5F653429D30BAB00723B28 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F653329D30BAB00723B28 /* FirebaseInAppMessagingSwift-Beta */; };
+		AC5F653629D30BAB00723B28 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F653529D30BAB00723B28 /* FirebaseInstallations */; };
+		AC5F653829D30BAB00723B28 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F653729D30BAB00723B28 /* FirebaseMessaging */; };
+		AC5F653A29D30BAB00723B28 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F653929D30BAB00723B28 /* FirebaseRemoteConfig */; };
+		AC5F653C29D30BAB00723B28 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F653B29D30BAB00723B28 /* FirebaseRemoteConfigSwift */; };
+		AC5F653E29D30BAB00723B28 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F653D29D30BAB00723B28 /* FirebaseStorage */; };
+		AC5F654029D30BAB00723B28 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F653F29D30BAB00723B28 /* FirebaseStorageCombine-Community */; };
+		AC914E4929D17AAF0020DB16 /* SmartPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC914E4829D17AAF0020DB16 /* SmartPort.swift */; };
+		ACD0EF4929CF5C6B00CC37F6 /* weatherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF4829CF5C6B00CC37F6 /* weatherDetailView.swift */; };
+		ACD0EF4D29CF65ED00CC37F6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF4B29CF65ED00CC37F6 /* City.swift */; };
+		ACD0EF4E29CF65ED00CC37F6 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF4C29CF65ED00CC37F6 /* Weather.swift */; };
+		ACD0EF5629CF65FA00CC37F6 /* NumberFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF5329CF65FA00CC37F6 /* NumberFormatting.swift */; };
+		ACD0EF5A29CF661700CC37F6 /* CurrentConditionsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF5829CF661700CC37F6 /* CurrentConditionsLoader.swift */; };
+		ACD0EF5B29CF661700CC37F6 /* ForecastLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF5929CF661700CC37F6 /* ForecastLoader.swift */; };
+		ACD0EF6229CF662500CC37F6 /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF5D29CF662500CC37F6 /* WeatherAPIClient.swift */; };
+		ACD0EF6329CF662500CC37F6 /* OpenWeatherEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF5E29CF662500CC37F6 /* OpenWeatherEndpoint.swift */; };
+		ACD0EF6429CF662500CC37F6 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF6029CF662500CC37F6 /* APIError.swift */; };
+		ACD0EF6529CF662500CC37F6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF6129CF662500CC37F6 /* APIClient.swift */; };
+		ACD0EF6B29CF667800CC37F6 /* CityForecastScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF6A29CF667800CC37F6 /* CityForecastScreen.swift */; };
+		ACD0EF6D29CF668000CC37F6 /* CityCurrentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF6C29CF668000CC37F6 /* CityCurrentScreen.swift */; };
+		ACD0EF6F29CF668500CC37F6 /* CityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF6E29CF668500CC37F6 /* CityList.swift */; };
+		ACD0EF7129CF67AD00CC37F6 /* weatherViewLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0EF7029CF67AD00CC37F6 /* weatherViewLogic.swift */; };
 		FE64044F29C6DEA000D53717 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE64044E29C6DEA000D53717 /* Alamofire */; };
 		FE64045229C6DEB200D53717 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FE64045129C6DEB200D53717 /* SwiftyJSON */; };
-		FE9EFAD129B267DE0042559B /* airplane_ground_controlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EFAD029B267DE0042559B /* airplane_ground_controlApp.swift */; };
-		FE9EFAD329B267DE0042559B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EFAD229B267DE0042559B /* ContentView.swift */; };
 		FE9EFAD529B267E00042559B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE9EFAD429B267E00042559B /* Assets.xcassets */; };
 		FE9EFAD829B267E00042559B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE9EFAD729B267E00042559B /* Preview Assets.xcassets */; };
-		FE9EFAE229B269C30042559B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EFAE129B269C30042559B /* MainView.swift */; };
 		FEE892AD29BC6FE200F35609 /* EmergencyNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE892AC29BC6FE100F35609 /* EmergencyNotifications.swift */; };
 		FEE892AF29BC705300F35609 /* NotificationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE892AE29BC705300F35609 /* NotificationCard.swift */; };
 		FEE892B329BC88A100F35609 /* WeatherReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE892B229BC88A100F35609 /* WeatherReport.swift */; };
-		FEE892B529BCE2DC00F35609 /* LoginLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE892B429BCE2DC00F35609 /* LoginLogic.swift */; };
 		FEF95C4129B90B020043D100 /* AcceptedMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF95C4029B90B020043D100 /* AcceptedMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC01408B29B7A92400C16062 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		AC01408B29B7A92400C16062 /* loogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loogInView.swift; sourceTree = "<group>"; };
+		AC06216229D17C50002EFA8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../../../Desktop/Weatherific-main/Weatherific/Weatherific/ContentView.swift"; sourceTree = "<group>"; };
+		AC2D90A229D083230043FDA0 /* flightScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flightScheduleView.swift; sourceTree = "<group>"; };
 		AC33290829C48CB10077F77A /* makeSOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeSOSView.swift; sourceTree = "<group>"; };
+		AC3EEC9929D051720084D97E /* crewChatBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crewChatBox.swift; sourceTree = "<group>"; };
+		AC3EEC9C29D06CA60084D97E /* TaskRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		AC3EEC9D29D06CA60084D97E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AC3EEC9E29D06CA60084D97E /* EventList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		AC3EEC9F29D06CA60084D97E /* SFSymbolStyling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSymbolStyling.swift; sourceTree = "<group>"; };
+		AC3EECA129D06CA70084D97E /* EventSymbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSymbols.swift; sourceTree = "<group>"; };
+		AC3EECA229D06CA70084D97E /* EventDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		AC3EECA329D06CA70084D97E /* ColorOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorOption.swift; sourceTree = "<group>"; };
+		AC3EECA429D06CA70084D97E /* EventEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEditor.swift; sourceTree = "<group>"; };
+		AC3EECA529D06CA70084D97E /* EventTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTask.swift; sourceTree = "<group>"; };
+		AC3EECA629D06CA70084D97E /* EventData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		AC3EECA729D06CA70084D97E /* EventRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		AC3EECA829D06CA70084D97E /* SymbolPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolPicker.swift; sourceTree = "<group>"; };
+		AC3EECB629D06D920084D97E /* DatePlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DatePlannerApp.swift; path = ../../../DatePlannerApp.swift; sourceTree = "<group>"; };
 		AC40342F29BCA52500A67C46 /* nonAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nonAuthView.swift; sourceTree = "<group>"; };
-		ACFD668529C43361005EA471 /* weatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherView.swift; sourceTree = "<group>"; };
-		FE64044229C592C300D53717 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
-		FE64044B29C6DE7800D53717 /* InformationElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationElement.swift; sourceTree = "<group>"; };
+		AC531F6D29D2030200A7C10E /* SwiftTabler-0.9.7 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SwiftTabler-0.9.7"; path = "../../Desktop/SwiftTabler-0.9.7"; sourceTree = "<group>"; };
+		AC5410A229D34651005D7DA8 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../LoginView.swift; sourceTree = "<group>"; };
+		AC5410A729D34DE8005D7DA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC914E4829D17AAF0020DB16 /* SmartPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartPort.swift; sourceTree = "<group>"; };
+		ACD0EF4829CF5C6B00CC37F6 /* weatherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherDetailView.swift; sourceTree = "<group>"; };
+		ACD0EF4B29CF65ED00CC37F6 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		ACD0EF4C29CF65ED00CC37F6 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		ACD0EF5329CF65FA00CC37F6 /* NumberFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatting.swift; sourceTree = "<group>"; };
+		ACD0EF5829CF661700CC37F6 /* CurrentConditionsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentConditionsLoader.swift; sourceTree = "<group>"; };
+		ACD0EF5929CF661700CC37F6 /* ForecastLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastLoader.swift; sourceTree = "<group>"; };
+		ACD0EF5D29CF662500CC37F6 /* WeatherAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
+		ACD0EF5E29CF662500CC37F6 /* OpenWeatherEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherEndpoint.swift; sourceTree = "<group>"; };
+		ACD0EF6029CF662500CC37F6 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		ACD0EF6129CF662500CC37F6 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		ACD0EF6A29CF667800CC37F6 /* CityForecastScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityForecastScreen.swift; sourceTree = "<group>"; };
+		ACD0EF6C29CF668000CC37F6 /* CityCurrentScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCurrentScreen.swift; sourceTree = "<group>"; };
+		ACD0EF6E29CF668500CC37F6 /* CityList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityList.swift; sourceTree = "<group>"; };
+		ACD0EF7029CF67AD00CC37F6 /* weatherViewLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherViewLogic.swift; sourceTree = "<group>"; };
 		FE9EFACD29B267DE0042559B /* airplane ground control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "airplane ground control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE9EFAD029B267DE0042559B /* airplane_ground_controlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airplane_ground_controlApp.swift; sourceTree = "<group>"; };
-		FE9EFAD229B267DE0042559B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE9EFAD429B267E00042559B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE9EFAD729B267E00042559B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FE9EFAE129B269C30042559B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FEE892AC29BC6FE100F35609 /* EmergencyNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyNotifications.swift; sourceTree = "<group>"; };
 		FEE892AE29BC705300F35609 /* NotificationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCard.swift; sourceTree = "<group>"; };
 		FEE892B229BC88A100F35609 /* WeatherReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherReport.swift; sourceTree = "<group>"; };
-		FEE892B429BCE2DC00F35609 /* LoginLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLogic.swift; sourceTree = "<group>"; };
 		FEF95C4029B90B020043D100 /* AcceptedMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptedMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,25 +120,148 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5F653429D30BAB00723B28 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				FE64045229C6DEB200D53717 /* SwiftyJSON in Frameworks */,
+				AC5F652A29D30BAB00723B28 /* FirebaseAuth in Frameworks */,
+				AC5F653A29D30BAB00723B28 /* FirebaseRemoteConfig in Frameworks */,
+				AC5F653629D30BAB00723B28 /* FirebaseInstallations in Frameworks */,
+				AC5F653E29D30BAB00723B28 /* FirebaseStorage in Frameworks */,
+				AC5F654029D30BAB00723B28 /* FirebaseStorageCombine-Community in Frameworks */,
+				AC531F7029D2061E00A7C10E /* SimpleTable in Frameworks */,
+				AC5F653029D30BAB00723B28 /* FirebaseDatabaseSwift in Frameworks */,
+				AC5F652629D30BAB00723B28 /* FirebaseAnalytics in Frameworks */,
+				AC5F652829D30BAB00723B28 /* FirebaseAppCheck in Frameworks */,
+				AC5F653829D30BAB00723B28 /* FirebaseMessaging in Frameworks */,
+				AC5F652C29D30BAB00723B28 /* FirebaseAuthCombine-Community in Frameworks */,
+				AC5F652E29D30BAB00723B28 /* FirebaseDatabase in Frameworks */,
+				AC5F653C29D30BAB00723B28 /* FirebaseRemoteConfigSwift in Frameworks */,
 				FE64044F29C6DEA000D53717 /* Alamofire in Frameworks */,
+				AC5F653229D30BAB00723B28 /* FirebaseInAppMessaging-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FE64044429C6D58500D53717 /* Web Services */ = {
+		AC06216029D17C30002EFA8D /* WeatherViews */ = {
 			isa = PBXGroup;
 			children = (
+				ACD0EF7029CF67AD00CC37F6 /* weatherViewLogic.swift */,
+				ACD0EF4829CF5C6B00CC37F6 /* weatherDetailView.swift */,
+				ACD0EF6C29CF668000CC37F6 /* CityCurrentScreen.swift */,
+				ACD0EF6A29CF667800CC37F6 /* CityForecastScreen.swift */,
+				ACD0EF6E29CF668500CC37F6 /* CityList.swift */,
+				AC06216229D17C50002EFA8D /* ContentView.swift */,
+				FEE892B129BC888F00F35609 /* Weather Report */,
 			);
-			path = "Web Services";
+			path = WeatherViews;
+			sourceTree = "<group>";
+		};
+		AC06216429D17CE9002EFA8D /* ChatBoxView */ = {
+			isa = PBXGroup;
+			children = (
+				AC33290829C48CB10077F77A /* makeSOSView.swift */,
+				AC3EEC9929D051720084D97E /* crewChatBox.swift */,
+			);
+			name = ChatBoxView;
+			sourceTree = "<group>";
+		};
+		AC06216529D17D26002EFA8D /* flightScheduleViews */ = {
+			isa = PBXGroup;
+			children = (
+				AC2D90A229D083230043FDA0 /* flightScheduleView.swift */,
+			);
+			name = flightScheduleViews;
+			sourceTree = "<group>";
+		};
+		AC06216629D17D62002EFA8D /* NotificationViews */ = {
+			isa = PBXGroup;
+			children = (
+				AC01408B29B7A92400C16062 /* loogInView.swift */,
+				FEE892AC29BC6FE100F35609 /* EmergencyNotifications.swift */,
+				FEE892AE29BC705300F35609 /* NotificationCard.swift */,
+			);
+			name = NotificationViews;
+			sourceTree = "<group>";
+		};
+		AC3EEC9B29D06C800084D97E /* scheduleViews */ = {
+			isa = PBXGroup;
+			children = (
+				AC3EECB629D06D920084D97E /* DatePlannerApp.swift */,
+				AC3EECA329D06CA70084D97E /* ColorOption.swift */,
+				AC3EEC9D29D06CA60084D97E /* Event.swift */,
+				AC3EECA629D06CA70084D97E /* EventData.swift */,
+				AC3EECA229D06CA70084D97E /* EventDetail.swift */,
+				AC3EECA429D06CA70084D97E /* EventEditor.swift */,
+				AC3EEC9E29D06CA60084D97E /* EventList.swift */,
+				AC3EECA729D06CA70084D97E /* EventRow.swift */,
+				AC3EECA129D06CA70084D97E /* EventSymbols.swift */,
+				AC3EECA529D06CA70084D97E /* EventTask.swift */,
+				AC3EEC9F29D06CA60084D97E /* SFSymbolStyling.swift */,
+				AC3EECA829D06CA70084D97E /* SymbolPicker.swift */,
+				AC3EEC9C29D06CA60084D97E /* TaskRow.swift */,
+			);
+			name = scheduleViews;
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		AC531F6C29D2030200A7C10E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				AC531F6D29D2030200A7C10E /* SwiftTabler-0.9.7 */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		ACD0EF4A29CF65ED00CC37F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0EF4B29CF65ED00CC37F6 /* City.swift */,
+				ACD0EF4C29CF65ED00CC37F6 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACD0EF4F29CF65FA00CC37F6 /* Formatting */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0EF5329CF65FA00CC37F6 /* NumberFormatting.swift */,
+			);
+			path = Formatting;
+			sourceTree = "<group>";
+		};
+		ACD0EF5729CF661700CC37F6 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0EF5829CF661700CC37F6 /* CurrentConditionsLoader.swift */,
+				ACD0EF5929CF661700CC37F6 /* ForecastLoader.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		ACD0EF5C29CF662500CC37F6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0EF5D29CF662500CC37F6 /* WeatherAPIClient.swift */,
+				ACD0EF5E29CF662500CC37F6 /* OpenWeatherEndpoint.swift */,
+				ACD0EF5F29CF662500CC37F6 /* APIClient */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ACD0EF5F29CF662500CC37F6 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0EF6029CF662500CC37F6 /* APIError.swift */,
+				ACD0EF6129CF662500CC37F6 /* APIClient.swift */,
+			);
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 		FE9EFAC429B267DE0042559B = {
 			isa = PBXGroup;
 			children = (
-				FE64044429C6D58500D53717 /* Web Services */,
+				AC531F6C29D2030200A7C10E /* Packages */,
 				FE9EFACF29B267DE0042559B /* airplane ground control */,
 				FE9EFACE29B267DE0042559B /* Products */,
 			);
@@ -87,12 +278,13 @@
 		FE9EFACF29B267DE0042559B /* airplane ground control */ = {
 			isa = PBXGroup;
 			children = (
-				FE9EFAE029B269A00042559B /* Model */,
-				FE9EFADF29B269970042559B /* Controller */,
+				ACD0EF5C29CF662500CC37F6 /* API */,
+				ACD0EF5729CF661700CC37F6 /* Loaders */,
+				ACD0EF4A29CF65ED00CC37F6 /* Models */,
+				ACD0EF4F29CF65FA00CC37F6 /* Formatting */,
 				FE9EFADE29B269660042559B /* Views */,
-				FE9EFAD029B267DE0042559B /* airplane_ground_controlApp.swift */,
-				FE9EFAD229B267DE0042559B /* ContentView.swift */,
 				FE9EFAD429B267E00042559B /* Assets.xcassets */,
+				AC5410A729D34DE8005D7DA8 /* GoogleService-Info.plist */,
 				FE9EFAD629B267E00042559B /* Preview Content */,
 			);
 			path = "airplane ground control";
@@ -109,58 +301,17 @@
 		FE9EFADE29B269660042559B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC06216629D17D62002EFA8D /* NotificationViews */,
+				AC3EEC9B29D06C800084D97E /* scheduleViews */,
+				AC06216529D17D26002EFA8D /* flightScheduleViews */,
+				AC06216429D17CE9002EFA8D /* ChatBoxView */,
+				AC06216029D17C30002EFA8D /* WeatherViews */,
 				AC40342F29BCA52500A67C46 /* nonAuthView.swift */,
-				AC01408B29B7A92400C16062 /* LogInView.swift */,
+				AC5410A229D34651005D7DA8 /* LoginView.swift */,
 				FEF95C4029B90B020043D100 /* AcceptedMainView.swift */,
-				AC33290829C48CB10077F77A /* makeSOSView.swift */,
-				FEE892AA29BC6FB700F35609 /* SubViews */,
-				FE9EFAE129B269C30042559B /* MainView.swift */,
-				ACFD668529C43361005EA471 /* weatherView.swift */,
+				AC914E4829D17AAF0020DB16 /* SmartPort.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		FE9EFADF29B269970042559B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				FEE892B429BCE2DC00F35609 /* LoginLogic.swift */,
-				FE64044229C592C300D53717 /* APIServices.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		FE9EFAE029B269A00042559B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FE64044B29C6DE7800D53717 /* InformationElement.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FEE892AA29BC6FB700F35609 /* SubViews */ = {
-			isa = PBXGroup;
-			children = (
-				FEE892AB29BC6FCB00F35609 /* AcceptedMainView */,
-			);
-			path = SubViews;
-			sourceTree = "<group>";
-		};
-		FEE892AB29BC6FCB00F35609 /* AcceptedMainView */ = {
-			isa = PBXGroup;
-			children = (
-				FEE892B129BC888F00F35609 /* Weather Report */,
-				FEE892B029BC886F00F35609 /* Notifications */,
-			);
-			path = AcceptedMainView;
-			sourceTree = "<group>";
-		};
-		FEE892B029BC886F00F35609 /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-				FEE892AC29BC6FE100F35609 /* EmergencyNotifications.swift */,
-				FEE892AE29BC705300F35609 /* NotificationCard.swift */,
-			);
-			path = Notifications;
 			sourceTree = "<group>";
 		};
 		FEE892B129BC888F00F35609 /* Weather Report */ = {
@@ -190,6 +341,21 @@
 			packageProductDependencies = (
 				FE64044E29C6DEA000D53717 /* Alamofire */,
 				FE64045129C6DEB200D53717 /* SwiftyJSON */,
+				AC531F6F29D2061E00A7C10E /* SimpleTable */,
+				AC5F652529D30BAB00723B28 /* FirebaseAnalytics */,
+				AC5F652729D30BAB00723B28 /* FirebaseAppCheck */,
+				AC5F652929D30BAB00723B28 /* FirebaseAuth */,
+				AC5F652B29D30BAB00723B28 /* FirebaseAuthCombine-Community */,
+				AC5F652D29D30BAB00723B28 /* FirebaseDatabase */,
+				AC5F652F29D30BAB00723B28 /* FirebaseDatabaseSwift */,
+				AC5F653129D30BAB00723B28 /* FirebaseInAppMessaging-Beta */,
+				AC5F653329D30BAB00723B28 /* FirebaseInAppMessagingSwift-Beta */,
+				AC5F653529D30BAB00723B28 /* FirebaseInstallations */,
+				AC5F653729D30BAB00723B28 /* FirebaseMessaging */,
+				AC5F653929D30BAB00723B28 /* FirebaseRemoteConfig */,
+				AC5F653B29D30BAB00723B28 /* FirebaseRemoteConfigSwift */,
+				AC5F653D29D30BAB00723B28 /* FirebaseStorage */,
+				AC5F653F29D30BAB00723B28 /* FirebaseStorageCombine-Community */,
 			);
 			productName = "airplane ground control";
 			productReference = FE9EFACD29B267DE0042559B /* airplane ground control.app */;
@@ -222,6 +388,8 @@
 			packageReferences = (
 				FE64044D29C6DEA000D53717 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				FE64045029C6DEB200D53717 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				AC531F6E29D2061E00A7C10E /* XCRemoteSwiftPackageReference "swiftui-simple-table" */,
+				AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = FE9EFACE29B267DE0042559B /* Products */;
 			projectDirPath = "";
@@ -239,6 +407,7 @@
 			files = (
 				FE9EFAD829B267E00042559B /* Preview Assets.xcassets in Resources */,
 				FE9EFAD529B267E00042559B /* Assets.xcassets in Resources */,
+				AC5410A829D34DE8005D7DA8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,20 +418,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3EECB729D06D920084D97E /* DatePlannerApp.swift in Sources */,
+				AC2D90A329D083230043FDA0 /* flightScheduleView.swift in Sources */,
+				AC3EECAB29D06CA70084D97E /* EventList.swift in Sources */,
+				AC3EECAF29D06CA70084D97E /* EventDetail.swift in Sources */,
+				AC3EECB329D06CA70084D97E /* EventData.swift in Sources */,
+				ACD0EF5629CF65FA00CC37F6 /* NumberFormatting.swift in Sources */,
+				AC3EECB429D06CA70084D97E /* EventRow.swift in Sources */,
 				FEF95C4129B90B020043D100 /* AcceptedMainView.swift in Sources */,
-				FE64044C29C6DE7800D53717 /* InformationElement.swift in Sources */,
-				FE9EFAD329B267DE0042559B /* ContentView.swift in Sources */,
-				FE64044329C592C300D53717 /* APIServices.swift in Sources */,
+				ACD0EF7129CF67AD00CC37F6 /* weatherViewLogic.swift in Sources */,
+				AC3EECA929D06CA70084D97E /* TaskRow.swift in Sources */,
 				FEE892B329BC88A100F35609 /* WeatherReport.swift in Sources */,
 				FEE892AD29BC6FE200F35609 /* EmergencyNotifications.swift in Sources */,
-				FE9EFAE229B269C30042559B /* MainView.swift in Sources */,
+				ACD0EF4E29CF65ED00CC37F6 /* Weather.swift in Sources */,
+				ACD0EF6B29CF667800CC37F6 /* CityForecastScreen.swift in Sources */,
+				AC3EECAA29D06CA70084D97E /* Event.swift in Sources */,
+				AC3EECB529D06CA70084D97E /* SymbolPicker.swift in Sources */,
+				ACD0EF4929CF5C6B00CC37F6 /* weatherDetailView.swift in Sources */,
+				ACD0EF6D29CF668000CC37F6 /* CityCurrentScreen.swift in Sources */,
+				ACD0EF6529CF662500CC37F6 /* APIClient.swift in Sources */,
 				AC40343029BCA52500A67C46 /* nonAuthView.swift in Sources */,
-				FEE892B529BCE2DC00F35609 /* LoginLogic.swift in Sources */,
+				AC3EECB029D06CA70084D97E /* ColorOption.swift in Sources */,
+				AC3EECAC29D06CA70084D97E /* SFSymbolStyling.swift in Sources */,
+				AC06216329D17C50002EFA8D /* ContentView.swift in Sources */,
 				FEE892AF29BC705300F35609 /* NotificationCard.swift in Sources */,
-				AC01408C29B7A92400C16062 /* LogInView.swift in Sources */,
-				FE9EFAD129B267DE0042559B /* airplane_ground_controlApp.swift in Sources */,
+				ACD0EF5B29CF661700CC37F6 /* ForecastLoader.swift in Sources */,
+				AC3EECB229D06CA70084D97E /* EventTask.swift in Sources */,
+				AC3EEC9A29D051720084D97E /* crewChatBox.swift in Sources */,
+				ACD0EF4D29CF65ED00CC37F6 /* City.swift in Sources */,
+				ACD0EF6229CF662500CC37F6 /* WeatherAPIClient.swift in Sources */,
+				AC3EECB129D06CA70084D97E /* EventEditor.swift in Sources */,
+				AC3EECAE29D06CA70084D97E /* EventSymbols.swift in Sources */,
+				ACD0EF6429CF662500CC37F6 /* APIError.swift in Sources */,
+				AC914E4929D17AAF0020DB16 /* SmartPort.swift in Sources */,
+				AC01408C29B7A92400C16062 /* loogInView.swift in Sources */,
+				ACD0EF6329CF662500CC37F6 /* OpenWeatherEndpoint.swift in Sources */,
+				ACD0EF5A29CF661700CC37F6 /* CurrentConditionsLoader.swift in Sources */,
+				ACD0EF6F29CF668500CC37F6 /* CityList.swift in Sources */,
+				AC5410A429D34651005D7DA8 /* LoginView.swift in Sources */,
 				AC33290929C48CB10077F77A /* makeSOSView.swift in Sources */,
-				ACFD668629C43362005EA471 /* weatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +593,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,7 +623,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,6 +661,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AC531F6E29D2061E00A7C10E /* XCRemoteSwiftPackageReference "swiftui-simple-table" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/darrarski/swiftui-simple-table";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		FE64044D29C6DEA000D53717 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -486,6 +696,81 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AC531F6F29D2061E00A7C10E /* SimpleTable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC531F6E29D2061E00A7C10E /* XCRemoteSwiftPackageReference "swiftui-simple-table" */;
+			productName = SimpleTable;
+		};
+		AC5F652529D30BAB00723B28 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		AC5F652729D30BAB00723B28 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		AC5F652929D30BAB00723B28 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AC5F652B29D30BAB00723B28 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		AC5F652D29D30BAB00723B28 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		AC5F652F29D30BAB00723B28 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		AC5F653129D30BAB00723B28 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		AC5F653329D30BAB00723B28 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		AC5F653529D30BAB00723B28 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		AC5F653729D30BAB00723B28 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		AC5F653929D30BAB00723B28 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		AC5F653B29D30BAB00723B28 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		AC5F653D29D30BAB00723B28 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		AC5F653F29D30BAB00723B28 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F652429D30BAB00723B28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
 		FE64044E29C6DEA000D53717 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FE64044D29C6DEA000D53717 /* XCRemoteSwiftPackageReference "Alamofire" */;

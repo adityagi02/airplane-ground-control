@@ -10,14 +10,14 @@ import SwiftUI
 import UIKit
 
 struct makeSOSView: View {
+    @State var sos = "SOS"
     var body: some View {
-        Text("Hello, World!")
-    }
-}
-
-struct makeSOSView_Previews: PreviewProvider {
-    static var previews: some View {
         VStack(){
+            Group{
+                Text("Make a ") +
+                Text("SOS ").foregroundColor(.red).bold() +
+                Text("Call!!")
+            }.font(.system(size: 34)).padding(.top, -40)
             VStack{
                 HStack{
                     locationTypeMenu()
@@ -39,10 +39,19 @@ struct makeSOSView_Previews: PreviewProvider {
     }
 }
 
+struct makeSOSView_Previews: PreviewProvider {
+    static var previews: some View {
+        makeSOSView()
+    }
+}
+
+
 
 
 
 struct locationTypeMenu: View{
+    let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
+    let lightGreyColor2 = Color(red: 200.0/255.0, green: 203.0/255.0, blue: 204.0/255.0)
     
     @State var selectedLocation = "Select Location"
     
@@ -85,6 +94,8 @@ struct locationTypeMenu: View{
 }
 
 struct flightTypeMenu: View{
+    let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
+    let lightGreyColor2 = Color(red: 200.0/255.0, green: 203.0/255.0, blue: 204.0/255.0)
     
     @State var selectedFlight = "Select Flight"
     
@@ -127,25 +138,31 @@ struct flightTypeMenu: View{
 }
 
 struct emergencyTypeMenu: View{
-    
+    let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
+    let lightGreyColor2 = Color(red: 200.0/255.0, green: 203.0/255.0, blue: 204.0/255.0)
     @State var selectedEmergencyCase = "Emergency Type"
     
     var body: some View {
         Menu{
             Button(action: {
-                selectedEmergencyCase = "Ground Staff"
+                selectedEmergencyCase = "llegal activity"
             }, label: {
-                Text("Ground Staff")
+                Text("llegal activity")
             })
             Button(action: {
-                selectedEmergencyCase = "Crew Staff"
+                selectedEmergencyCase = "Fire on board the aircraft"
             }, label: {
-                Text("Crew Staff")
+                Text("Fire on board the aircraft")
             })
             Button(action: {
-                selectedEmergencyCase = "Maintenance Staff"
+                selectedEmergencyCase = "Worsening weather"
             }, label: {
-                Text("Maintenance Staff")
+                Text("Worsening weather")
+            })
+            Button(action: {
+                selectedEmergencyCase = "Aircraft damage"
+            }, label: {
+                Text("Aircraft damage")
             })
         } label: {
             Label(
@@ -169,6 +186,8 @@ struct emergencyTypeMenu: View{
 }
 
 struct assignTypeMenu: View{
+    let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
+    let lightGreyColor2 = Color(red: 200.0/255.0, green: 203.0/255.0, blue: 204.0/255.0)
     
     @State var selectedAssignedOfficer = "Assign                       "
     
@@ -212,25 +231,27 @@ struct assignTypeMenu: View{
 
 
 struct emergencyIntensityTypeMenu: View{
+    let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
+    let lightGreyColor2 = Color(red: 200.0/255.0, green: 203.0/255.0, blue: 204.0/255.0)
     
     @State var selectedEmergencyIntensity = "Emergency Intensity"
     
     var body: some View {
         Menu{
             Button(action: {
-                selectedEmergencyIntensity = "Ground Staff"
+                selectedEmergencyIntensity = "High🔴"
             }, label: {
-                Text("Ground Staff")
+                Text("High🔴").foregroundColor(.red)
             })
             Button(action: {
-                selectedEmergencyIntensity = "Crew Staff"
+                selectedEmergencyIntensity = "Medium🟠"
             }, label: {
-                Text("Crew Staff")
+                Text("Medium🟠")
             })
             Button(action: {
-                selectedEmergencyIntensity = "Maintenance Staff"
+                selectedEmergencyIntensity = "Low🟡"
             }, label: {
-                Text("Maintenance Staff")
+                Text("Low🟡")
             })
         } label: {
             Label(
@@ -255,6 +276,8 @@ struct emergencyIntensityTypeMenu: View{
 
 
 struct emergencyDescriptionBox: View{
+    let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0)
+    let lightGreyColor2 = Color(red: 200.0/255.0, green: 203.0/255.0, blue: 204.0/255.0)
     @State var emergencyDescription: String = "Add Description..."
     var body: some View{
         

@@ -17,7 +17,6 @@ struct nonAuthView: View {
                 nonAuthDescription2()
             }
         }
-       
     }
 }
 

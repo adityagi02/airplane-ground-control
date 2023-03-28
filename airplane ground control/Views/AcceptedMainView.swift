@@ -7,13 +7,20 @@
 
 import SwiftUI
 
-struct AcceptedMainView: View {
-    
-   
-    init() {
-        FetchAPI()
+
+struct finalAcceptedMainView: View {
+    var body: some View{
+        AcceptedMainView().navigationBarItems(trailing: helpButton)
     }
-    
+}
+
+private var helpButton: some View {
+    Button(action: { }) {
+        Image(systemName: "exclamationmark.circle.fill")
+    }
+}
+
+struct AcceptedMainView: View {
     
     var body: some View {
 
@@ -38,7 +45,7 @@ struct AcceptedMainView: View {
                                 .shadow(radius: 12)
                         })
 
-                        NavigationLink(destination: EmergencyNotifications(), label: {
+                        NavigationLink(destination: crewChatBox(), label: {
                             Button(action: {
                                 buttonAction()
                             }, label: {
@@ -57,7 +64,7 @@ struct AcceptedMainView: View {
                     .padding(.leading, -10)
                 
                     HStack(spacing: -70){
-                        NavigationLink(destination: EmergencyNotifications(), label: {
+                        NavigationLink(destination: makeSOSView(), label: {
                             Button(action: {
                                 buttonAction()
                             }, label: {
@@ -72,7 +79,7 @@ struct AcceptedMainView: View {
                                 .shadow(radius: 12)
                         })
                         
-                        NavigationLink(destination: EmergencyNotifications(), label: {
+                        NavigationLink(destination: DatePlannerApp(), label: {
                             Button(action: {
                                 buttonAction()
                             }, label: {
@@ -90,9 +97,8 @@ struct AcceptedMainView: View {
                     }.padding(.bottom, 5)
                     .padding(.leading, -12)
                 
-                    NavigationLink(destination: EmergencyNotifications(), label: {
+                    NavigationLink(destination: weatherViewLogic(), label: {
                         Button(action: {
-                           FetchAPI()
                         }, label: {
                             VStack(spacing: 0){
                                 HStack{
@@ -141,7 +147,7 @@ struct AcceptedMainView: View {
                     }).padding(.top, 20)
                     .padding(.bottom, 30)
                 
-                    NavigationLink(destination: EmergencyNotifications(), label: {
+                    NavigationLink(destination: flightScheduleView(), label: {
                         Button(action: {
                             buttonAction()
                         }, label: {
@@ -247,9 +253,9 @@ struct AcceptedMainView: View {
                                 .shadow(radius: 8)
                         })
                     }.padding([.leading])
-                }
-            .navigationBarTitle("SmartPort✈️").font(.system(size: 45))
-            .navigationBarTitleDisplayMode(.inline)
+                }.navigationBarTitle(Text("SmartPort✈️"))
+           
+        //    .navigationBarTitleDisplayMode(.inline)
             }
           }
         }
@@ -264,7 +270,7 @@ func buttonAction() {
 struct AcceptedMainView_Previews: PreviewProvider {
     
     static var previews: some View {
-        AcceptedMainView()
+        finalAcceptedMainView()
     }
 }
 
