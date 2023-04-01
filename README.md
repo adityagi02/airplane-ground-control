@@ -24,4 +24,8 @@ We can login and reaches to HomePage if credentials are correct, else we reach t
 
 
 ## Homepage🏠
+
+Homepage is the main landing page that opens after successfull login. Depending upon the crew type user is defined to, he can access various important and helpful stats and data which is coming from live API. Various badges it will have are as:
+1. Notification : This service provides live notifications created by other crew members in case of any information that need to be delievered to the user.
+2. 
 ![hackathonPresentation 001](https://user-images.githubusercontent.com/77538183/229187793-3a61f810-b100-4d00-b2db-f9c42c43596c.jpeg)
