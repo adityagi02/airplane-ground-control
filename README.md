@@ -38,7 +38,7 @@ Homepage is the main landing page that opens after successfull login. Depending 
 
 ## Differnt Views
 
-<img width="300" alt="Screenshot 2023-04-01 at 11 10 04 AM" src="https://user-images.githubusercontent.com/77538183/229267817-d0a3f28e-e0d3-495d-8d51-04006b1c30a8.png"> <img width="308" alt="Screenshot 2023-04-01 at 11 10 42 AM" src="https://user-images.githubusercontent.com/77538183/229267860-44f4b00c-0ea4-49ec-b198-e7f37002febd.png">  <img width="311" alt="Screenshot 2023-04-01 at 11 11 58 AM" src="https://user-images.githubusercontent.com/77538183/229267879-d5ddf756-cf7c-43e7-937e-2d419ed29687.png"> 
+<img width="300" alt="Screenshot 2023-04-01 at 11 10 04 AM" src="https://user-images.githubusercontent.com/77538183/229267817-d0a3f28e-e0d3-495d-8d51-04006b1c30a8.png"> <img width="300" alt="Screenshot 2023-04-01 at 11 10 42 AM" src="https://user-images.githubusercontent.com/77538183/229267860-44f4b00c-0ea4-49ec-b198-e7f37002febd.png">  <img width="300" alt="Screenshot 2023-04-01 at 11 11 58 AM" src="https://user-images.githubusercontent.com/77538183/229267879-d5ddf756-cf7c-43e7-937e-2d419ed29687.png"> 
 
 
 ## `Want to Contribute` <img align="center" src="https://github.com/AkashSingh3031/AkashSingh3031/blob/main/Handshake.gif" height="40px">
