@@ -84,7 +84,7 @@ struct AcceptedMainView: View {
                                 buttonAction()
                             }, label: {
                                 HStack(spacing: 8){
-                                    Text("My \n Schuedule ").fontWeight(.medium).font(.system(size: 22))
+                                    Text("My \n Schedule ").fontWeight(.medium).font(.system(size: 22))
                                     Text("⏳").font(.system(size: 45))
                                 }
                             }).tint(.yellow)
@@ -215,14 +215,14 @@ struct AcceptedMainView: View {
                     })
                 
                     HStack(spacing: -55){
-                        NavigationLink(destination: EmergencyNotifications(), label: {
+                        NavigationLink(destination: SwiftUIView(), label: {
                             
                             Button(action: {
                                 buttonAction()
                             }, label: {
                                 VStack{
                                     VStack(spacing: 4.5){
-                                        Text("Inventary").font(.system(size: 29)).foregroundColor(.black).shadow(radius: 3)
+                                        Text("Inventory").font(.system(size: 29)).foregroundColor(.black).shadow(radius: 3)
                                         Text("⚙️").font(.system(size: 37)).shadow(radius: 3)
                                     }
                                 }
@@ -234,7 +234,7 @@ struct AcceptedMainView: View {
                                 .shadow(radius: 8)
                         })
                         
-                        NavigationLink(destination: EmergencyNotifications(), label: {
+                        NavigationLink(destination: SwiftUIView(), label: {
                             
                             Button(action: {
                                 buttonAction()

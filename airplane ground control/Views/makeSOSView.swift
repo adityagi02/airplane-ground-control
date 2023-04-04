@@ -33,7 +33,7 @@ struct makeSOSView: View {
                 ContenttView().padding(.trailing, 20)
             }.padding(.leading, 10)
             submitSOS().padding(.top, -30).padding(.bottom, 70)
-        }.navigationBarTitle("SmartPort✈️")
+        }
             .navigationBarTitleDisplayMode(.inline)
             .padding(.top, 105)
     }

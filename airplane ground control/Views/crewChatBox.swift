@@ -39,11 +39,12 @@ struct crewChatBox: View {
                 Text("Ground Crew👨🏻‍💼")
                     .font(.title)
                     .fontWeight(.bold)
+                    .padding(.top, -60)
                 
                 Text("Please avoid any personal message!!")
                     .fontWeight(.heavy)
                     .padding(.horizontal)
-                    .padding(.top, 1)
+                    .padding(.top, -40)
                     .foregroundColor(.red)
             }
             VStack {
@@ -52,7 +53,7 @@ struct crewChatBox: View {
                         HStack {
                             Spacer()
                             HStack() {
-                                Text("Hello bot, how are you?")
+                                Text("A passenger is not getting his luggage at Belt 3, Need a staff crew  at Domestic Terminal")
                                     .multilineTextAlignment(.leading)
                                     .padding(.leading, 30)
                                     .padding(.vertical, 10)
@@ -81,7 +82,7 @@ struct crewChatBox: View {
                         
                         HStack {
                         
-                        Text("I'm fine, what about you?")
+                        Text("Sure, Amit is coming!!")
                             .multilineTextAlignment(.leading)
                             .padding(.trailing, 30)
                             .padding(.vertical, 10)
@@ -109,7 +110,7 @@ struct crewChatBox: View {
                         HStack {
                             Spacer()
                             HStack() {
-                                Text("Can you give me a lorem ipsum?")
+                                Text("Any update about International Terminal?")
                                     .multilineTextAlignment(.leading)
                                     .padding(.leading, 30)
                                     .padding(.vertical, 10)
@@ -138,7 +139,7 @@ struct crewChatBox: View {
                         HStack {
                         VStack{
                             Image("emergencySampleImage").cornerRadius(14)
-                            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat urna ante, id pretium libero ullamcorper et. Phasellus vehicula nisl sed consequat vehicula. Duis pellentesque nulla eget porttitor molestie. Morbi maximus nulla eu nisl suscipit, nec imperdiet odio ultricies. Donec non accumsan massa. Quisque quis dignissim lacus. Morbi viverra egestas augue, ac aliquet libero. Etiam ut odio et leo sodales placerat. Pellentesque nec ipsum eget eros cursus cursus a ac erat. Morbi ac convallis ipsum. Aenean venenatis aliquet est in vehicula. Sed dictum aliquet molestie.")
+                            Text("A person at Gate 34, International Terminal 2, fainted with heavy breath and sweating. Ground Crew reached immediately and medical Services Staff are informed in no time. We are taking him to the Medical Care Unit, Terminal 2. No extra crew needed.")
 
                         }       .multilineTextAlignment(.leading)
                                 .padding(.trailing, 30)
@@ -166,7 +167,7 @@ struct crewChatBox: View {
                         HStack {
                             Spacer()
                             HStack() {
-                                Text("Can you give me a lorem ipsum?")
+                                Text("We need a WheelChair Crew at Gate no. 9")
                                     .multilineTextAlignment(.leading)
                                     .padding(.leading, 30)
                                     .padding(.vertical, 10)
@@ -194,7 +195,7 @@ struct crewChatBox: View {
                         
                         HStack {
                         
-                        Text("I'm fine, what about you?")
+                        Text("Coming!!")
                             .multilineTextAlignment(.leading)
                             .padding(.trailing, 30)
                             .padding(.vertical, 10)

@@ -36,19 +36,15 @@ struct loginView: View {
         NavigationView {
   //          ScrollView {
                 
-                VStack(spacing: 16) {
+                VStack(spacing: 10) {
                     HelloText()
-                    Button {
-                        
-                    } label: {
-                        Image(systemName:"nonAuthImage")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 100, height: 100)
-                            .clipped()
-                            .cornerRadius(1)
-                            .padding()
-                    }
+                    Image("loginImage")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 140, height: 110)
+//                        .clipped()
+                        .cornerRadius(1)
+                        .padding()
 
                     Picker(selection: $isLoginMode, label: Text("Picker here")) {
                         Text("Login")
@@ -84,9 +80,9 @@ struct loginView: View {
                             Spacer()
                         }.background(Color.blue).cornerRadius(15).buttonStyle(.borderedProminent)
                     }
-                    
                     Text(self.loginStatusMessage)
                         .foregroundColor(.red)
+                    
                 }
                 .padding()
                 
@@ -100,6 +96,7 @@ struct loginView: View {
     
     private func handleAction() {
         if isLoginMode {
+            
 //            print("Should log into Firebase with existing credentials")
             loginUser()
         } else {
@@ -119,6 +116,7 @@ struct loginView: View {
             print("Successfully logged in as user: \(result?.user.uid ?? "")")
             
             self.loginStatusMessage = "Successfully logged in as user🚀"
+
         }
     }
     
@@ -194,9 +192,9 @@ struct HelloText: View {
     var body: some View {
         Text("Welcome to ")
             .fontWeight(.light)
-            //.padding(.bottom, 2)
+            .padding(.bottom, -20)
         Text("SmartPort✈️")
-            .font(.largeTitle)
+            .font(.system(size: 47))
             .fontWeight(.semibold)
     }
 }

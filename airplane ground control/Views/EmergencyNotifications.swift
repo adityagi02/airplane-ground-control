@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct EmergencyNotifications: View {
+    
+    let notifications = Notifications.previewNotification.sorted { $0.notifyTime < $1.notifyTime }
     var body: some View {
         //NavigationView {
-            VStack {
-                List {
-                    NotificationCard()
-                    
-                }
+            VStack(spacing: 105) {
+                List(notifications) { notification in
+                    NotificationCard(notification: notification.notification, notificationDescription: notification.notificationDescription, notifyTime: notification.notifyTime)
+                }.navigationTitle("Notifications")
             }
-           .navigationTitle("Notifications")
-       // }
-    }
+        }
+    // }
 }
 
 struct EmergencyNotifications_Previews: PreviewProvider {

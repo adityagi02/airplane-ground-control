@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct NotificationCard: View {
+    
+    let notification: String
+    let notificationDescription: String
+    let notifyTime: String
     var body: some View {
         VStack(spacing:10) {
-            HStack(spacing:80) {
-                Text("Notification Title")
-                    .bold()
-                Text("23/05/2023")
-            }
-            
-            Text("List view is straightforward but very powerful. You can use it similarly to other SwiftUI views")
-            
-        }
-        
+            HStack() {
+                Text(notification).bold().foregroundColor(.red).multilineTextAlignment(.leading)
+                Spacer(minLength: 5)
+                Text(notifyTime).multilineTextAlignment(.trailing)
+            }.multilineTextAlignment(.trailing)
+            Text(notificationDescription).multilineTextAlignment(.leading)
+        }.frame(width: 340, alignment: .trailing)
     }
 }
+
+
