@@ -6,6 +6,8 @@ SmartPort is an iOS app made for the airport crews i.e. Maintainence, Ground, St
 
 
 This app is completely based on `SwiftUI` framework with the latest version and for `iOS 16.0` and Up.
+
+#### This is my submission for <a href="https://www.hackerearth.com/challenges/hackathon/rolls-royce/" title="this">R² Data Labs Hackathon</a>🏎️.
 ## Techstack
 Frameworks & tools used are:-
 1. OpenWeatherMap API, Windy API🌦️ and Airlabs API🛬
